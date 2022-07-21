@@ -27,3 +27,9 @@ x *= 4; //100
 x++; //101
 x--; //100
 console.log(x); //100
+
+// comparison opearators   ( ==, !=,  > , < , <= , >= )
+
+console.log(ageHritik > ageSarah); //true
+console.log(ageHritik >= ageSarah); //true
+console.log(ageHritik <= ageSarah); //false
