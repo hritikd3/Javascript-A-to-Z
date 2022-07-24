@@ -25,15 +25,3 @@ console.log(userInput || otherInput); //true
 // 3) NOT OPERATOR
 //  True -> False
 console.log(!otherInput); // false
-
-// Random example of ternary opeartor
-let country = "Portugal";
-let continent = "Europe";
-let population = 10;
-console.log(country);
-console.log(continent);
-console.log(population);
-
-console.log(
-  `${country}'s population is ${population > 33 ? "above" : "below"} average`
-);
