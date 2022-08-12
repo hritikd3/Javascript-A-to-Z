@@ -1,0 +1,8 @@
+
+// Function declaration 
+function checkAge(birthYear){
+    return 2022- birthYear;
+
+}
+const age=checkAge(2001)
+console.log(age)
