@@ -6,3 +6,12 @@ function checkAge(birthYear){
 }
 const age=checkAge(2001)
 console.log(age)
+
+
+// function expression ( here the function is defined under a variable and very IMP: function Expressino do not perform the hoisting )
+// const age2= checkAge1(2001)  // will not hoist and throw reference error 
+const checkAge1=function (birthYear){
+    return 2022- birthYear;
+}
+const age2 = checkAge1(2001); // will work normally
+console.log(age2)
