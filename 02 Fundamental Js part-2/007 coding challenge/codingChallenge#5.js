@@ -5,17 +5,18 @@
 
 
 //   2. Use the function to calculate the average for both teams
-const scoreDolhin= calcAverage(44, 123 , 571)
+const scoreDolphins= calcAverage(44, 23 , 71)
 const scoreKoalas= calcAverage(65, 54 ,49)
-console.log( scoreDolhin, scoreKoalas)
+console.log( scoreDolphins, scoreKoalas)
 
-// 3.Create a function 'checkWinner' that takes the average score of each team as parameters ('avgDolhins' and 'avgKoalas'), and then logs the winner
-const checkWinner=(avgDolhins, avgKoalas)=>{
-  if(avgDolhins  >= 2* avgKoalas){
-    console.log(`Dolhins is winner ${avgDolhins} Vs ${avgKoalas}`);
-  }else if(avgKoalas >= 2* avgDolhins){
-    console.log(`Koalas is winner ${avgKoalas} Vs ${avgDolhins}`);
+// 3.Create a function 'checkWinner' that takes the average score of each team as parameters ('avgDolphins' and 'avgKoalas'), and then logs the winner
+const checkWinner=(avgDolphins, avgKoalas)=>{
+  if(avgDolphins  >= 2* avgKoalas){
+    console.log(`Dolphins is winner ${avgDolphins} Vs ${avgKoalas}`);
+  }else if(avgKoalas >= 2* avgDolphins){
+    console.log(`Koalas is winner ${avgKoalas} Vs ${avgDolphins}`);
+  }else{
+    console.log(' No team won the match')
   }
-
 }
-console.log(checkWinner(89,56))
+checkWinner(scoreDolphins, scoreKoalas)
