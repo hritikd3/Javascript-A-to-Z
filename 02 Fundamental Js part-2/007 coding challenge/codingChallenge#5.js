@@ -20,3 +20,4 @@ const checkWinner=(avgDolphins, avgKoalas)=>{
   }
 }
 checkWinner(scoreDolphins, scoreKoalas)
+checkWinner(56,781) // cehck winner is standalone function which can output the values without getting affected
