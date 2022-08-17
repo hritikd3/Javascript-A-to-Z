@@ -2,5 +2,10 @@
 const hritik=[
     'hritik', 'Singh',2022-2001,'programmer' ,['madhav, mukund, mradul']
 ]
-for(let i=0;i< hritik.length; i++)
+
+const types=[];
+for(let i=0;i< hritik.length; i++){
 console.log(hritik[i], typeof hritik[i])
+types[i]= typeof hritik[i]
+}
+console.log(types)
