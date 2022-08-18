@@ -7,3 +7,7 @@
 tips and total values (bill + tip) for every bill value in the bills array. Use a for
 loop to perform the 10 calculations!
 Test data: 22, 295, 176, 440, 37, 105, 10, 1100, 86 and 52
+
+##### Bonus: Write a function 'calcAverage' which takes an array called 'arr' as 
+an argument. This function calculates the average of all numbers in the given 
+array
