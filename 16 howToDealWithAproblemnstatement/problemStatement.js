@@ -15,6 +15,7 @@
 
 const temperatures = [1, 9, 13, 20, 7, "error", -2, -7, -3, -10];
 const temperature2 = [5, 2, 14, 34, "error", -6, -3];
+
 function calcTempAmplitude(tempArray) {
   let max = tempArray[0];
   let min = tempArray[0];
