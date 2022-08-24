@@ -1,7 +1,7 @@
 ### Guess My Number
 
 #### A old School game built using vanillaJs . Simple and fun game
-##### you can check it out from here [link](http://example.com).
+##### you can check it out from here [Game](https://guess-thenumbergame.netlify.app).
 
 **functionality**
 - restart the game 
