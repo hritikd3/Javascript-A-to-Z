@@ -1,1 +1,1 @@
-'use-strict's
+'use-strict'
