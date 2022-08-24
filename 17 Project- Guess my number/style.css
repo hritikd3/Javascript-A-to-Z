@@ -21,7 +21,7 @@ body {
 /* LAYOUT */
 header {
   position: relative;
-  height: 35vh;
+  height: 30vh;
   border-bottom: 7px solid #eee;
 }
 
@@ -59,7 +59,7 @@ h1 {
 .number {
   background: #eee;
   color: #333;
-  font-size: 4rem;
+  font-size: 3rem;
   width: 8rem;
   padding: 1rem 0rem;
   text-align: center;
