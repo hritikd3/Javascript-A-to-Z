@@ -117,3 +117,14 @@ h1 {
 .label-score {
   margin-bottom: 2rem;
 }
+
+footer{
+  text-align: center;
+  font-size: 12px;
+  font-weight: 100;
+
+}
+footer span{
+  color: rgb(240, 59, 59);
+  
+}
