@@ -8,4 +8,4 @@
 - restoring highscore
 - updating score 
 
-<img src="ss.png">
+<img src="ss.jpg">
