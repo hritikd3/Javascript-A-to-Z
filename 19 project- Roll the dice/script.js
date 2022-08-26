@@ -24,7 +24,8 @@ const scores = [0, 0];
 let currentScore = 0;
 let activePlayer = 0;
 
-// PROBLEM, STATEMENT ONE ( rolling, slid chnage)
+// PROBLEM, STATEMENT ONE ( generate random dice,  display it, displpay new score )
+
 // rolling the functionality
 btnRoll.addEventListener('click', function () {
   // 1) generating random dice roll
@@ -53,3 +54,15 @@ btnRoll.addEventListener('click', function () {
     player1.classList.toggle('player--active')
   }
 });
+
+
+// /PROBLEM SATTEMENT SECOND(hold user score, add to current score)
+btnHold.document.addEventListener('click', function (){
+  // /add current scorte to active player score 
+ scores[activePlayer] += currentScore;  //means score[1]= score[1]+ currentScore
+
+ document.querySelector('#score--0')
+//   check if player score is >=100  ,finish the game
+
+//  switch to next player
+})
