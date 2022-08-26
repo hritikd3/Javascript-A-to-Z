@@ -17,6 +17,27 @@ const player0 = document.querySelector('.player--0');
 const player1 = document.querySelector('.player--1');
 // starting conditions
 
+let currentScore, activePlayer, scores, playing;
+
+const storingFunction = function () {
+  scores = [0, 0];
+  currentScore = 0;
+  activePlayer = 0;
+  playing = true;
+  
+  score0.textContent = 0;
+  score1.textContent = 0;
+  currEle0.textContent = 0;
+  currEle1.textContent = 0;
+  
+  diceElement.classList.add('hidden');
+  player0.classList.remove('player--winner');
+  player1.classList.remove('player--winner');
+  player0.classList.add('player--active');
+  player1.classList.remove('player--active');
+};
+storingFunction();
+
 // Folowing the DRY Principle by making single function and using it wherever necessary
 function switchPlayer() {
   document.getElementById(`current--${activePlayer}`).textContent = 0;
@@ -25,27 +46,6 @@ function switchPlayer() {
   player0.classList.toggle('player--active');
   player1.classList.toggle('player--active');
 }
-
-let currentScore, activePlayer, scores, playing;
-
-const storingFunction = function () {
-  scores = [0, 0];
-  currentScore = 0;
-  activePlayer = 0;
-  playing = true;
-
-  score0.textContent = 0;
-  score1.textContent = 0;
-  currEle0.textContent = 0;
-  currEle1.textContent = 0;
-
-  diceElement.classList.add('hidden');
-  player0.classList.remove('player--winner');
-  player1.classList.remove('player--winner');
-  player0.classList.add('player--active');
-  player1.classList.remove('player--active');
-};
-storingFunction();
 
 // PROBLEM, STATEMENT ONE ( generate random dice,  display it, displpay new score )
 
@@ -106,4 +106,4 @@ btnHold.addEventListener('click', function () {
   }
 });
 
-btnNew.addEventListener('click', storingFunction());
+btnNew.addEventListener('click', storingFunction);
