@@ -29,7 +29,7 @@ Roll 80
 
 ## 🛠️ Technologies used 
 The technology used are
--- Enhancement in UI
+-- 
 - [HTML](https://www.w3schools.com/html/)
 - [CSS](https://www.w3schools.com/css/) 
 - [JS](https://v2.tailwindcss.com/docs)
