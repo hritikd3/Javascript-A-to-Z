@@ -15,6 +15,11 @@ Roll 80
 <img src="s.jpg"></img>
   </kbd>
 </p>
+<p align="center"> 
+  <kbd>
+<img src="flow-chart-dice-roll-game.png"></img>
+  </kbd>
+</p>
 
 #### check out the deployed project :https://roll80.netlify.app/
 ## :fire: Features
