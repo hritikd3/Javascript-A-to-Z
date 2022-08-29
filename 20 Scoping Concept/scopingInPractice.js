@@ -19,12 +19,13 @@ function calcAge(birthYear) {
       const str = ` oh you are a millenial, ${firstName}`;
       console.log(str);
 
-      function add(a, b) {  // function also act as block scoped 
+      function add(a, b) {
+        // function also act as block scoped
         return a + b;
       }
       console.log(add(3, 4));
-}
-//   console.log(add(3, 4));  reference error 
+    }
+    //   console.log(add(3, 4));  reference error
     // console.log(str); //reference error
   }
   printAge();
@@ -32,3 +33,12 @@ function calcAge(birthYear) {
 }
 const firstName = "hritik";
 calcAge(1991);
+
+// even we can have same name of function and even same name of variable it wont create error just bec they are not in same scope 
+function printAge() {
+  let a = 45;
+  console.log(a);
+  const firstName=" Another name " // no problem boss
+  console.log(firstName)
+}
+printAge();
