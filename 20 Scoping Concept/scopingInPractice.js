@@ -1,4 +1,4 @@
-'use strict'
+"use strict";
 
 // function calcAge(birthYear) {
 //     const age= 2022- birthYear;
@@ -8,20 +8,27 @@
 // const firstName= " Hritik"
 // calcAge(2001)
 
-function calcAge(birthYear){
-    const age=2022-birthYear;
+function calcAge(birthYear) {
+  const age = 2022 - birthYear;
 
-    function printAge() {
-      const output = ` ${firstName}  your age is ${age} and born in ${birthYear}  `;
-      console.log(output);
+  function printAge() {
+    const output = ` ${firstName}  your age is ${age} and born in ${birthYear}  `;
+    console.log(output);
 
-      if (year >= 1981 && year <= 1996) {
-        let millenial = true;
+    if (birthYear >= 1981 && birthYear <= 1996) {
+      const str = ` oh you are a millenial, ${firstName}`;
+      console.log(str);
+
+      function add(a, b) {  // function also act as block scoped 
+        return a + b;
       }
-      console.log(millenial); //reference error
-    }
-    printAge()
-    return age ;
+      console.log(add(3, 4));
 }
-const firstName= "hritik"
-calcAge(1991)
+//   console.log(add(3, 4));  reference error 
+    // console.log(str); //reference error
+  }
+  printAge();
+  return age;
+}
+const firstName = "hritik";
+calcAge(1991);
