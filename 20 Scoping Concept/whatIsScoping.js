@@ -13,12 +13,12 @@ const myName= 'hritik' //global scope
  function first(){ //parent function
     const age=21;
 
-    if(age>= 21){
+    if(age>= 21){    //child sibling
         const decade=3; //let and const are block scoped 
         var millenial= true; //var is function scoped
     }
 
-    function second(){
+    function second(){   //child function of first()
         const job= ' Developer';
 //here we want variable from first() function and global so it can lookup in scope chain 
         console.log(`${myName} is a ${age} years old & he is a ${job}`)
