@@ -10,7 +10,7 @@
 // /Example
 const myName= 'hritik' //global scope 
 
- function first(){
+ function first(){ //parent function
     const age=21;
 
     if(age>= 21){
