@@ -15,7 +15,7 @@ const myName= 'hritik' //global scope
 
     if(age>= 21){
         const decade=3; //let and const are block scoped 
-        var millenial= true;
+        var millenial= true; //var is function scoped
     }
 
     function second(){
