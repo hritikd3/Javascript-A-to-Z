@@ -21,10 +21,10 @@ const myName= 'hritik' //global scope
     function second(){   //child function of first()
         const job= ' Developer';
 //here we want variable from first() function and global so it can lookup in scope chain 
-        console.log(`${myName} is a ${age} years old & he is a ${job}`)
-        second();
-    }
-
+console.log(`${myName} is a ${age} years old & he is a ${job}`)
+}
+second();
+    
  }
 
-
+first()
