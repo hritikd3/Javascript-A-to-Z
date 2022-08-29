@@ -12,19 +12,21 @@ function calcAge(birthYear) {
   const age = 2022 - birthYear;
 
   function printAge() {
-    const output = ` ${firstName}  your age is ${age} and born in ${birthYear}  `;
+    let output = ` ${firstName}  your age is ${age} and born in ${birthYear}  `;
     console.log(output);
 
     if (birthYear >= 1981 && birthYear <= 1996) {
       const str = ` oh you are a millenial, ${firstName}`;
       console.log(str);
-
+//  reassigning outter scope's variable
+      output = "new output "
       function add(a, b) {
         // function also act as block scoped
         return a + b;
       }
       console.log(add(3, 4));
     }
+    console.log(output)
     //   console.log(add(3, 4));  reference error
     // console.log(str); //reference error
   }
