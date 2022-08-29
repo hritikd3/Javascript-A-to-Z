@@ -44,3 +44,7 @@ function printAge() {
   console.log(firstName)
 }
 printAge();
+
+console.log(h) // undefined ( as only declaration was hoisted not the memory)
+const h= 'hello'
+console.log(h) // hello 
