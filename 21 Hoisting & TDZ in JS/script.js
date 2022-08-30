@@ -24,5 +24,10 @@ const addExpression = function (a, b) {  //throw a reference error bcz function 
   return a + b;
 };
 
-
+console.log(addArrow)
 var addArrow= (a,b)=> a+b;   // with var it willl be hoisted but set to undefined 
+
+
+
+// ======pitfall of hoisting when we use var=====
+// Example
