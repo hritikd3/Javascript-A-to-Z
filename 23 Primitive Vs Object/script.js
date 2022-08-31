@@ -1,3 +1,4 @@
+'use strict'
 // if we check behind the secen inside the callstack how this works,  so three parameter created ( Identifier , Address , Value)
 /* Identifier   | Address | Value
    firstName   | 0001    |  hritik
@@ -18,9 +19,23 @@ const jessica={
     age: 21
 };
 
-let friendJessica= jessica;
+const friendJessica= jessica;
 friendJessica.lastName= 'singh';
 console.log("before friendship:", jessica);
 console.log("after friendship" , friendJessica)
 
-friendJessica={}
+
+
+// Copying objects :  deep copy
+const jessica2 = {
+  firstName: 'Jessica',
+  lastName: 'Williams',
+  age: 27,
+  family: ['Alice', 'Bob'],
+};
+const jessicaCopy = Object.assign({}, jessica2);
+jessicaCopy.lastName = 'Davis';
+jessicaCopy.family.push('Mary');
+jessicaCopy.family.push('John');
+console.log('Before marriage:', jessica2);
+console.log('After marriage: ', jessicaCopy);
