@@ -13,3 +13,6 @@ const movie = {
 
 console.log(movie['Title']);
 console.log(movie.Title);
+
+const [first, ,second]= movie.location;  //value of object get destructured here 
+console.log(first,second)    //italy , madrid
