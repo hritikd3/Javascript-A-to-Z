@@ -47,5 +47,5 @@ let a=2;
 let b=3;
 const obj={a:44, b: 56 ,c: 78};
 //here we mutate the a,b previous value with new value 
-({a,b}= obj);  //very very important thing is parenthesis here, without it throw error
+({a,b}= obj);  //very very important thing is parenthesis here, without it throw errors.
 console.log(a,b)
