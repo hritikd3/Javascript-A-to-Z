@@ -30,7 +30,7 @@ const game = {
     ],
   ],
   score: "4:0",
-  scored: ["hummels","Lewandowski", "Gnarby", "Lewandowski", "Hummels"],
+  scored: ["john","Lewandowski", "Gnarby", "Lewandowski", "Hummels"],
   date: "Nov 9th, 2037",
   odds: {
     team1: 1.33,
@@ -43,4 +43,13 @@ const game = {
 // along with the goal number (Example: "Goal 1: Lewandowski")
 for(const [i,player] of game.scored.entries()){
     console.log(`Gaol ${i+1}: ${player}`)
+}
+
+//2. Use a loop to calculate the average odd and log it to the console 
+const odds=Object.values(game.odds)
+let avg=0;
+for(const odd of odds ){
+    avg +=odd;
+    avg =avg/odds.length;
+    console.log(avg)
 }
