@@ -22,4 +22,4 @@ console.log(list)
 console.log(list[1]) // it will return 'undefined' ecause in set their is nothing like returning index element
 
 
-console.log(new Set('hritik'))
+console.log(new Set('hritik').size);
