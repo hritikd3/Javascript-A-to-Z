@@ -11,3 +11,9 @@ console.log(chars[8]);
 const strCopy = str.split();
 console.log(strCopy);
 // expected output: Array ["I was waiting for you and you were not their."]
+
+
+const names= 'hritik dangi'
+console.log(names.split('  '))  //[ 'hritik dangi' ]
+console.log(names.split(' '))  //[ 'hritik', 'dangi' ]
+console.log(names.split(''))   //[  'h', 'r', 'i', 't',  'i', 'k', ' ', 'd',  'a', 'n', 'g', 'i']
