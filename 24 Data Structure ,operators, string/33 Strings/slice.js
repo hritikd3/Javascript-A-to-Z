@@ -14,3 +14,16 @@ console.log(myBook.slice(1, -1))  //ow to win Friends and influence peopl
 console.log(myBook.slice(-6))  // return from last
 
 // school class prediction 
+const checkClassSection = function(section){
+    const s= section.slice(-1);
+    if(s== 'B' ||  s=='C'){
+        console.log(' you are not a lucky section 🥺')
+    }else{
+        console.log(' damn! see who is in lucky section A 👉🏽')
+    }
+}
+
+checkClassSection('12A')
+checkClassSection('11B')
+checkClassSection('10C')
+checkClassSection('12C')
