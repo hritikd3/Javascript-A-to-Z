@@ -12,5 +12,5 @@ const runOnce= function (){
     console.log('this will run once')
  }) ();
 
- // one more example 
+ // one more example using arrow function .. How we invoke the function just when it ended 
  (()=>{console.log(' this is running ')})();
