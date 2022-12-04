@@ -1,3 +1,9 @@
+// The call() method is a predefined JavaScript method.
+// It can be used to invoke (call) a method with an owner object as an argument (parameter).
+
+// syntax 
+// The call() method calls the function with a given this value and arguments provided individually.
+
 const avantikaExpress={
   trainName: ' avantika express',
   seatCode: 'AE',
