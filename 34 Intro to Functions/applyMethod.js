@@ -11,10 +11,21 @@ const avantikaExpress = {
 };
 
 const book= avantikaExpress.book;
-const bhopalExpress = {
-  trainName: " intercity ",
-  seatCode: " CX",
-};
+
 // book.call(bhopalExpress, 4554544, "Madhav ");
 // only diff between call() and apply() is that call accepts values as list of arguments but in apply it is single array of arguments 
-book.apply(avantikaExpress,[23 , ' hritik'])
+book.apply(avantikaExpress,[23 , ' hritik '])
+
+
+//another example 
+const person={
+    fullName:function(city, country){
+        return this.firstName + " " + this.lastName + " " + city + " ," + country;
+    }
+}
+const person1={
+    firstName: ' Hritik ',
+    lastName: 'Singh ',
+}
+console.log(person.fullName.apply(person1,['Indore', ' MP']))
+
