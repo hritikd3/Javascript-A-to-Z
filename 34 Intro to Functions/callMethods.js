@@ -29,6 +29,6 @@ console.log(avantikaExpress)
 const bhopalExpress={
   trainName: ' intercity ',
   seatCode:' CX',
-  booking:[],
+
 }
 book.call(bhopalExpress, 4554544, 'Madhav ')
