@@ -8,8 +8,24 @@ const poll = {
     const newAnswer=Number(prompt(`${this.question}\n ${this.options.join('\n')}\n (write option number)`));
     console.log(newAnswer)
   
-    //register answer
-  
+    //register answer  //here short circuting happen
+ typeof newAnswer ==='number' && newAnswer < this.answers.length && this.answers[newAnswer]++;
+
+    // console.log(this.answers)
+    this.displayResults();
+    this.displayResults('string');
+},
+displayResults(type= 'array'){
+  if(type== 'array'){
+    console.log(this.answers)
+
+  }else if(type== 'string'){
+    console.log(`Poll results are ${this.answers.join(' , ')}`)
+  }
 } 
+
 };
-poll.registerNewAnswer();
+
+// poll.registerNewAnswer();
+document.querySelector('.poll').addEventListener('click',poll.registerNewAnswer.
+ bind(poll))
