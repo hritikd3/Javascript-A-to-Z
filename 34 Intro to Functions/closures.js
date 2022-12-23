@@ -17,3 +17,21 @@ const booker= secureBooking();
 booker();  //1 Passenger
 booker();  //2 Passenger
 booker();  //3 Passenger
+
+
+let f;
+const g= function(){
+    const a=23;
+    f= function (){
+        console.log(a*2) 
+    }
+}
+g();
+f();
+console.dir(f)
+
+//callback function
+// setTimeout(function(){
+//     console.log("hey")
+// },3000)
+
