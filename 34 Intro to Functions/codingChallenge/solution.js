@@ -5,9 +5,10 @@ const poll = {
 
  registerNewAnswer(){
     //get answer
-    const newAnswer=prompt(`${this.question}\n ${this.options.join('\n')}\n (write option number)`)
+    const newAnswer=Number(prompt(`${this.question}\n ${this.options.join('\n')}\n (write option number)`));
     console.log(newAnswer)
-  //register answer
+  
+    //register answer
   
 } 
 };
