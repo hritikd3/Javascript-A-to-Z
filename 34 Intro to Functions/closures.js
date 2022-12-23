@@ -35,3 +35,17 @@ console.dir(f)
 //     console.log("hey")
 // },3000)
 
+
+// EXAMPLE OF CLOSURES 
+const boardPassengers= function(n, wait){
+    const perGroup= n/3;
+
+    setTimeout(function(){
+        console.log(`we are now boarding all ${n} passengers`)
+        console.log(`their are 3 groups with ${perGroup} passenger each`)
+    }, wait* 1000);
+
+    console.log(`will start boarding in ${wait} seconds`)
+}
+
+boardPassengers(180,3)
