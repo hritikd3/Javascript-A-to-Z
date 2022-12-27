@@ -13,6 +13,7 @@ for(const movement of movements){
 console.log("*********using different way**********")
 
 const arr = [1200, 300, -120, 900, 220, -412, 730];
+//he the two parameter we passed = [index, current element of array]
 for(const [i,value] of arr.entries()){
      if(value > 0){
         console.log(`value ${i+1}: you deposited  ${value}`)
