@@ -17,3 +17,9 @@ for (const mov of movements) {
   movementUsdFor.push(mov * euroToUsd);
 }
 console.log(movementUsdFor);
+
+//antoher way
+const movementDesc=  movements.map((mov,i)=> `Movements ${i=1}: You ${mov >0 ? 'Deposited:' : 'Withdrawal'} ${Math.abs(mov)} `
+);
+console.log(movementDesc)
+ 
