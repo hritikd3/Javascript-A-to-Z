@@ -11,3 +11,4 @@ const numSort= [12,22,400,7,9,-23,-09,67632]
 console.log(numSort.sort())  // noty sorted in order
 
 console.log(numSort.sort((a,b)=> a-b))  //working fine with comparator functjon 
+
